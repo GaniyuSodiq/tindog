@@ -41,9 +41,6 @@ h3{
     font-size: 3rem;
 }
 
-nav{
-    margin: 50px 0;
-}
 
 
 
@@ -63,23 +60,25 @@ nav{
 
 
 .heading-text-box{
-    padding: 50px 0 0;
+    padding: 20px 0 0;
 }
 
 .title-row{
-    padding: 0 1.4%;
+    padding: 10% 1.4%;
 }
 
 .hero-image{
     width: 22%;
-    position: absolute;
+    
     right: 25%;
     transform: rotate(25deg);
+    position: absolute;
     z-index: 1;
 }
 
 
 .benefits-section{
+    background-color: #fff;
     text-align: center;
     padding: 10% 15%;
     position: relative;
@@ -169,14 +168,55 @@ nav{
     margin: 5px;
 }
 
+@media (max-width: 1251px){
+    .col-lg-6 h1{
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 900;
+        line-height: 1.5;
+        font-size: 3rem;
+        margin-bottom: 30px;
+        color: white;
+    }
+}
 
+@media (max-width: 991px){
 
-@media (max-width: 1030px){
+    .title-row{
+        text-align: center;
+    }
+
     .hero-image{
-        width: 100%;
-       
-        
+        width: 40%;
         transform: rotate(0);
+        padding-top: 5%;
+        position:static;
+        z-index: 1;
+    }
+    
+    
+    .benefits-section{
+        position: relative;
+        z-index: 1;
+    }
+}
+
+@media (max-width: 530px){
+    .col-lg-6 h1{
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 900;
+        line-height: 1.5;
+        font-size: 2.5rem;
+        margin-bottom: 30px;
+        color: white;
+    }
+
+    .hero-image{
+        width: 55%;
+    }
+
+    h2,h3{
+        
+        font-size: 2.5rem;
         
     }
 }
